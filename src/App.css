@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #1E1E1E;
+}
+
+div.project {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 26.875rem;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: .5rem;
+
+  background: #1A1924;
+}
+
+header.content-top {
+  width: inherit;
+  height: 10.5rem;
+  background: #16151E;
+  border-radius: .5rem
+}
+
+nav.options {
+  height: 5rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 2.5rem;
+  gap: 1.5rem;
+}
+div.title-options {
+  width: 100%;
+  height: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+div.title-options p {
+  color: #E1E1E6;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex: 1;
+}
+div.title-options img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+div.search {
+  width: 100%;
+  height: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .75rem 1.5rem;
+  border-radius: .3rem;
+  gap: 0.625rem;
+
+  background: #24243D;
+}
+div.search img {
+  width: 1rem;
+  height: 1rem;
+}
+div.search input[type='text'] {
+  height: 1rem;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #8C8CBA;
+  caret-color: #fff;
+}
+div.search input[type='text']::placeholder {
+  color: #8C8CBA;
+}
+
+section.list-contacts {
+  width: inherit;
+  height: 100vh;
+  color: #E1E1E6;
+  overflow-y: scroll;
+  margin-left: -2.5rem;
+  margin-bottom: 1rem;
+}
+section.list-contacts .content-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 2.5rem 5rem;
+}
+
+section.list-contacts::-webkit-scrollbar {
+  width: 1rem;
+}
+section.list-contacts::-webkit-scrollbar-track {
+  margin-top: 2rem;
+  border-radius: 100vw;
+  background: #1A1924;
+}
+section.list-contacts::-webkit-scrollbar-thumb {
+  
+  border-radius: 100vw;
+  border: .2rem solid #1A1924;
+  background: #282843;
+}
+
+div.content-line {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+div.content-line span.alfabeto {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+  border-radius: .6rem;
+
+  color: #E1E1E6;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  background: #633BBC;
+}
+
+div.content-line .content-data {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+div.content-line .content-data img {
+  width: 3rem;
+  height: 3rem;
+  outline: .1rem solid #633BBC;
+  object-fit: contain;
+  border-radius: 50%;
+}
+div.content-data div.name-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .25rem;
+}
+div.name-phone span.name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  color: #E1E1E6;
+}
+div.name-phone span.phone {
+  color: #8C8CBA;
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: .8rem;
+}
+
